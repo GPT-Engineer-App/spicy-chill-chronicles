@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Index = () => {
@@ -15,7 +15,7 @@ const Index = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.5}>
-          <Box bg="yellow.500" height="100vh" display="flex" justifyContent="center" alignItems="center">
+          <Box id="products" bg="yellow.500" height="100vh" display="flex" justifyContent="center" alignItems="center">
             <VStack spacing={4}>
               <Heading as="h2" size="xl" color="black">Our Products</Heading>
               <Text fontSize="lg" color="black">Explore our wide range of chili products</Text>
@@ -24,7 +24,7 @@ const Index = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={0.5}>
-          <Box bg="green.500" height="100vh" display="flex" justifyContent="center" alignItems="center">
+          <Box id="contact" bg="green.500" height="100vh" display="flex" justifyContent="center" alignItems="center">
             <VStack spacing={4}>
               <Heading as="h2" size="xl" color="white">Contact Us</Heading>
               <Text fontSize="lg" color="white">Get in touch for more information</Text>
